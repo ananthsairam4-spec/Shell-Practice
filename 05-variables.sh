@@ -1,5 +1,12 @@
 #!/bin/bash
 
-TIMESTAMP=$(date)
+#TIMESTAMP=$(date)
+#echo "Time is: $TIMESTAMP"
 
-echo "Time is: $TIMESTAMP"
+START_TIME=$(date +%s)
+
+sleep 10
+
+END_TIME=$(date +%s)
+
+ELAPSED_TIME=$((END_TIME - START_TIME))
